@@ -1,0 +1,37 @@
+display:
+block, inline, inlin-block, none, flex, grid
+
+block:
+defulat >> elmetns
+take line
+
+inline:
+take widtha s the contnent neaded:
+
+inline-block:
+both of the two worlds:
+elemtns beside each others,
+margin, padding, tob, botttom, width, height
+
+none:
+remove elment entirly form teh html docment
+
+flex:
+flex box
+
+
+positioning:
+
+controla postiion "coordinates"of the elemtn.
+
+types;
+statick, absolute, relative, sticky. fixed
+
+form amir:: get real world examples of useing display: sticky;
+
+
+css best practces:
+1/ use clsasses insted of ids
+2/ never never use inline css
+3/ consisancy in naming >> descriptiv names, upper case >> camelCase 
+4/ as much as you can,< groupu stylgin

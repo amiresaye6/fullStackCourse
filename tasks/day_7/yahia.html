@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    let name = "me";
+    let age = 20;
+    let isStudent = true;
+
+    console.log("part 1 :");
+
+    console.log("Name: " + name);
+    console.log("Age: " + age);
+    console.log("Is Student: " + isStudent);
+
+    age = 30;
+    console.log("Updated Age: " + age);
+
+    const PI = 3.14;
+    console.log("Value of PI: " + PI);
+    // PI = 3;
+
+    //Const Cannot be changed. 
+
+    console.log("part 2 :");
+
+    console.log("trying to add a string and a number will work if normally, ex above name + age will give me30");
+    console.log("attempting to subtract will give an error. ( known thing js )");
+    console.log("the === operator checks values and type unlike == that checks value only  ");
+
+    let name1 = "31";
+    let name2 = 31;
+
+    console.log(name1 == name2); // true
+    console.log(name1 === name2); // true
+
+
+    console.log("part 3 :");
+
+
+    //change the value bellow to test :D 
+    let variable1 = "Hello";
+
+
+    if (variable1 == null || variable1 == undefined || variable1 == "0" || variable1 == "") {
+        console.log("empty");
+
+
+    } else {
+        console.log("has value");
+    }
+
+    console.log("part 4 :");
+
+    //we will use the predefined age above for the statement 
+
+    if (age >= 18) {
+        console.log("You are an adult.");
+    } else {
+        console.log("You are a minor.");
+    }
+
+    //using the ternary operator to check if the person is a student or not
+    //also we will change the value of age 
+
+    age = 16;
+
+    age >= 18 ? console.log("You are an adult.") : console.log("You are a minor.");
+
+
+    var username = ""
+
+    if (username == "" || username == null) {
+        username = "Guest";
+    }
+    console.log(username);
+
+    username = null;
+
+    username = username ?? "Guest";
+    console.log(username);
+
+    console.log("part 5 :");
+
+
+    for (let i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+
+    for (let i = 1; i <= 20; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+        }
+    }
+    let num = [1, 2, 3, 4, 5];
+
+    for (let i = 0; i < num.length; i++) {
+        console.log(num[i]);
+    }
+
+    console.log("part 6 :");
+
+    function greet(name) {
+        return "Hello, " + name + "!";
+    }
+
+    function guestfun(username) {
+        if (username === "" || username == null) {
+            return "Guest";
+        }
+        return username;
+
+    }
+
+    const guestfun2 = (username) => {
+        if (username === "" || username == null) {
+            return "Guest";
+        }
+        return username;
+    };
+
+    username = "";
+    username = guestfun(username);
+    console.log(username);
+
+    username = "";
+    username = guestfun2(username);
+    console.log(username);
+
+    function add(age) {
+        age >= 18 ? console.log("You are an adult.") : console.log("You are a minor.");
+    }
+
+    add(20);
+    add(16);
+
+    console.log("part 7 :");
+
+    //GLOBAL VAR WILL BE ACCESSIBLE ANYWHERE IN THE CODE
+    var EXvar = "global var";
+    //LET AND CONST ARE BLOCK SCOPED, THEY ARE ONLY ACCESSIBLE WITHIN THE BLOCK THEY ARE DEFINED IN
+
+    function test() {
+        let local = x;
+        console.log(EXvar); // accessible
+        console.log(local); // accessible
+
+    }
+
+    console.log(EXvar); // accessible
+    // console.log(local); // not accessible, will throw an error
+
+
+    console.log("part 8 :");
+
+    let x = 10;
+    let y = x
+    x = 30;
+    console.log("x: " + x);
+    console.log("y: " + y);
+
+    y = 20;
+
+
+    console.log("x: " + x); // 10
+    console.log("y: " + y); // 20
+    //values for x and y are different.
+
+
+    let obj1 = { name: "Alice", age: 25 };
+    let obj2 = obj1;
+
+    obj2.age = 30;
+
+
+    console.log(obj1.age); // 30
+    console.log(obj2.age); // 30
+
+    //values for both changes. 
+
+
+    let arr1 = [1, 2, 3];
+    let arr2 = arr1;
+
+    arr1[3] = 4;
+
+    console.log(arr1); // [1, 2, 3, 4]
+    console.log(arr2); // [1, 2, 3, 4]
+
+    //works aswell
+
+
+    function final(name, age) {
+
+        const userName = name || "Guest";
+
+        return age >= 18 ? console.log("Hello " + userName + ", you are an adult.") : console.log("Hello " + userName + ", you are a minor.");
+
+    }
+
+    final("Alice", 25);
+
+
+</script>
+
+</html>

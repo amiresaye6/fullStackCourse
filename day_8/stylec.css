@@ -1,0 +1,54 @@
+#evenOdd {
+    width: 1000px;
+    background: red;
+    height: 1000px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.sqare {
+    /* background-color: lightgreen; */
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 12px;
+}
+
+.even {
+    background: lightgreen;
+}
+
+.odd {
+    background: lightblue;
+}
+
+
+.active {
+    background: blue;
+}
+
+
+.form {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.watch {
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}

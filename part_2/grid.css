@@ -1,0 +1,42 @@
+body {
+    background-color: goldenrod;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: 60px auto 100px;
+
+    grid-template-areas:
+        "HeaderArea"
+        "MainSection"
+        "FooterArea"
+    ;
+}
+
+
+/* 
+H >> heade
+S >> Sidebar
+M >> main section
+*/
+
+header {
+    grid-area: HeaderArea;
+    /* grid-area: hamada; */
+    background-color: greenyellow;
+}
+
+/* nav {
+    grid-area: saed;
+    background-color: lightblue;
+    } */
+
+main {
+    grid-area: MainSection;
+    /* grid-area: Medo; */
+    background-color: aquamarine;
+}
+
+footer {
+    grid-area: FooterArea;
+    background-color: lightblue;
+}

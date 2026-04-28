@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background: lightgreen;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.card img {
+    transition: all 1s linear ;
+}
+
+.card img:hover {
+    transform: scale(0.9);
+    /* transform: rotate(180deg); */
+    /* transform: translateX(-10px); */
+    /* transform: translateX(30px); */
+
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+
+    background-color: gray;
+    margin: auto;
+}
+
+.temp {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: tomato;
+    transition:.4s ease-in-out;
+}
+
+.box:hover .temp {
+    transform: translateX(100%);
+}
+
+.temp:hover {
+    background-color: aquamarine;
+}
+
+.demo-image {
+    /* --- 1. THE ESSENTIALS (Good to keep active) --- */
+    max-width: 100%;
+    /* height: auto; */
+    /* display: block; */
+    /* Removes the white space/gap at the bottom of images */
+    
+    /* --- 2. SIZING & SHAPE --- */
+    /* width: 300px; */
+    /* height: 300px; */
+    /* aspect-ratio: 1 / 1; */
+    /* Forces a square */
+    /* aspect-ratio: 16 / 9; */
+    /* Cinematic widescreen */
+    
+    /* --- 3. THE "DISTORTION" FIXERS --- */
+    /* object-fit: cover; */
+    /* Fills container without squishing (crops edges) */
+    /* object-fit: contain; */
+    /* Fits whole image inside (leaves empty space) */
+    /* object-position: right; */
+    /* Focuses on the top of the image (good for portraits) */
+    
+    /* --- 4. BORDERS & MASKS --- */
+    /* border: 10px solid #333; */
+    /* border-radius: 20px; */
+    /* Rounded corners */
+    /* border-radius: 500px; */
+    /* Makes it a circle (if image is square) */
+    /* outline: 5px solid red; */
+    /* Border that doesn't take up space in the box model */
+    /* box-shadow: 10px 10px 20px rgba(0,0,0,0.5); */
+
+    /* --- 5. FILTERS (The "Photoshop" Section) --- */
+    /* filter: grayscale(100%); */
+    /* filter: sepia(100%); */
+    /* filter: blur(5px); */
+    /* filter: brightness(0.5); */
+    /* Darkens the image (useful for text overlays) */
+    /* filter: contrast(200%); */
+    /* filter: hue-rotate(90deg); */
+    /* Changes the colors entirely */
+    /* filter: drop-shadow(5px 5px 10px blue); */
+    /* Follows the shape of transparent PNGs! */
+    
+    /* --- 6. LAYER EFFECTS --- */
+    /* opacity: 0.5; */
+    /* mix-blend-mode: multiply; */
+    /* Blends image with the background color behind it */
+    
+    /* --- 7. INTERACTION SETUP --- */
+    /* cursor: pointer; */
+    /* transition: all 0.3s ease; */
+    /* Makes the hover effects below smooth */
+}
+
+.card img {
+    margin: 10px;
+    border-radius: 20px;
+}
+
+/* --- 8. HOVER EFFECTS (Uncomment this whole block to test) --- */
+/* .demo-image:hover {
+  transform: scale(1.1); 
+  filter: none; 
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
+  }  */
+  
+  /* web  */
+@media (max-width: 1200px) {
+    main {
+        background: lightblue;
+    }
+}
+
+/* tablet */
+@media (max-width: 992px) {
+    main {
+        background: lightcoral;
+    }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    main {
+        background: limegreen;
+    }
+}
+
+
+/* class grouping  */
+
+/* 
+.one {
+    abc
+    234
+}
+
+.two {
+    abc, def
+} */

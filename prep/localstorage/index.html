@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex items-center justify-center">
+        <div class="container flex items-center shadow-xl  rounded-xl m-4 justify-center gap-2 bg-gray-100 w-96 h-96">
+            <button id="add" class="w-20 text-white  bg-blue-400 rounded-xl">+</button>
+            <h1 id="number" class="w-20 text-center text-xl text-bold text-green-600"></h1>
+            <button id="sub" class="w-20 text-white  bg-red-400 rounded-xl">-</button>
+        </div>
+
+
+        <div class="container flex items-center shadow-xl  rounded-xl m-4 justify-center gap-2 bg-gray-100 w-96 h-96">
+            <form action="" id="userForm" class="bg-slate-300 flex flex-col gap-3 items-start shadow-md p-3 rounded-xl">
+                <input required id="userName" type="text" placeholder="username" class="px-2 py-1 rounded-md">
+                <input required id="email" type="email" placeholder="email" class="px-2 py-1 rounded-md">
+                <input required id="phoneNumber" type="tel" placeholder="phone number" class="px-2 py-1 rounded-md">
+                <select name="gender" id="gender" class="px-2 py-1 rounded-md">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+                <button type="submit"
+                    class="bg-green-400 px-2 py-1 rounded-md hover:bg-green-300 transition">Save</button>
+            </form>
+        </div>
+
+        <div
+            class="container flex items-center shadow-xl flex-col p-4 rounded-xl m-4 justify-center gap-2 bg-gray-100 w-96 h-96">
+            <h1>Current User</h1>
+            <p id="userNameShow" class="px-2 py-1 rounded-md bg-rose-300 w-full text-white"></p>
+            <p id="emailShow" class="px-2 py-1 rounded-md bg-rose-300 w-full text-white"></p>
+            <p id="phoneNumberShow" class="px-2 py-1 rounded-md bg-rose-300 w-full text-white"></p>
+            <p id="genderShow" class="px-2 py-1 rounded-md bg-rose-300 w-full text-white"></p>
+        </div>
+
+    </div>
+
+    <div class="overflow-hidden rounded-lg border border-slate-200 shadow-md m-5">
+        <table class=" w-full border-collapse bg-white text-left text-sm text-slate-500">
+            <thead class="bg-slate-50">
+                <tr>
+                    <th scope="col" class="px-6 py-4 font-semibold text-slate-900">Username</th>
+                    <th scope="col" class="px-6 py-4 font-semibold text-slate-900">Email</th>
+                    <th scope="col" class="px-6 py-4 font-semibold text-slate-900">Phone Number</th>
+                    <th scope="col" class="px-6 py-4 font-semibold text-slate-900">Gender</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody" class="divide-y divide-slate-100 border-t border-slate-100">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="localStorage.js"></script>
+
+
+</body>
+
+</html>

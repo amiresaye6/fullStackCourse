@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tester</title>
+</head>
+<body>
+    <script>
+   let products = [
+        { name: "Tarte Shape Tap", price: 100, category: "Concealer" },
+        { name: "L.A. Girl HD Pro Concea", price: 250, category: "Concealer" },
+        { name: "Maybelline Mascara", price: 450, category: "Mascara" },
+        { name: "Huda Beauty Lipstick", price: 95, category: "Lipstick" },
+        { name: "MAC Foundation", price: 160, category: "Foundation" },
+        { name: "NARS Blush", price: 140, category: "Blush" },
+        { name: "Rare Beauty Concealer", price: 90, category: "Concealer" },
+        { name: "Maybelline Instant Age Rewind ", price: 150, category: "Concealer" },
+        ];
+    console.log(products );
+    // console.log([...products]);
+
+// Task 1
+    products.push({ name: "Fenty Powder", price: 130, category: "Powder" });
+    // products.push({ name: " Born This Way Super Coverage", price: 110, category: "Lipstick" });
+    // products.push({ name: "Voluminous Lash Paradiser", price: 60, category: "Mascara" });
+
+    console.log(products);
+
+// Task 2
+    products.pop();
+    console.log(products);
+
+// Task 3
+    products.unshift({ name: "Kiko Eyeliner", price: 35, category: "Eyeliner" });
+    console.log(products);
+
+// Task 4 // 
+    products.shift();
+    console.log(products);
+
+// Task 5
+    let part = products.slice(0, 5);
+    console.log(part);
+
+// Task 6 //
+    products.splice(6, 2);
+    console.log(products);
+
+// Task 7
+    let names = products.map(function(item) {
+    return item.name;
+    });
+    console.log(names);
+
+// Task 8
+    let newArr = products.map(function(item) {
+    return {
+        name: item.name,
+        price: item.price,
+        isExpensive: item.price > 150
+    };
+    });
+    console.log(newArr);
+
+// Task 9
+    let upper = products.map(function(item) {
+    return item.name.toUpperCase();
+    });
+    console.log(upper);
+
+// Task 10
+    let price150 = products.filter(function(item) {
+    return item.price > 150;
+    });
+    console.log(price150);
+
+// Task 11
+    let lipstick = products.filter(function(item) {
+    return item.category == "Lipstick";
+    });
+    console.log(lipstick);
+    // console.log([...products]);
+
+// Task 12
+    let removeMac = products.filter(function(item) {
+    return item.name != "MAC Foundation";
+    });
+    console.log(removeMac);
+
+// Task 13
+// بستخدمها لتشغيل FUN 
+//بستخدنها للتعديل على  ال DATA 
+
+    let addPrice = products.map(function(item) {
+    return {
+        name: item.name,
+        price: item.price + 10,
+        category: item.category
+    };
+    });
+    console.log(addPrice);
+//بعمل فلتره للعتاصر حسب شرط معين
+    let onlyHigh = products.filter(function(item) {
+    return item.price > 100;
+    });
+    console.log(onlyHigh);
+
+// Task 14 //بحمع العناصر في متغير 
+    let total = products.reduce(function(sum, item) {
+    return sum + item.price;
+    }, 0);
+    console.log(total);
+
+// Task 15
+    let avg = total / products.length;
+    console.log(avg);
+
+// Task 16
+    let countLipstick = products.reduce(function(count, item) {
+    if (item.category == "Lipstick") {
+        return count + 1;
+    } else {
+        return count;
+    }
+    }, 0);
+    console.log(countLipstick);
+
+// Task 17
+//حترجعلي اول ELEMENT مطابق فقط ومش حتكمل LOOP
+    let first = products.find(function(item) {
+    return item.price > 100;
+    });
+    console.log(first);
+
+// Task 18
+    let cheap = products.some(function(item) {
+    return item.price < 50;
+    });
+    console.log(cheap);
+
+// Task 19
+    let allGood = products.every(function(item) {
+    return item.price > 20;
+    });
+    console.log(allGood);
+
+// Task 20
+    products.sort(function(a, b) {
+    return a.price - b.price;
+    });
+    console.log(products);
+
+// Task 21
+    let user = {
+    name: "Sara",
+    age: 21,
+    isStudent: true
+    };
+    console.log(user);
+
+// Task 22
+    user.city = "Nablus";
+    console.log(user);
+
+// Task 23
+    user.age = 22;
+    console.log(user);
+
+// Task 24
+    delete user.isStudent;
+    console.log(user);
+
+// Task 25
+    console.log(user.name);
+    console.log(user["city"]);
+
+// Task 26
+    user.hello = function() {
+    console.log("Hello, my name is " + this.name);
+    };
+
+// Task 27
+    user.hello();
+
+// Task 28
+    console.log(Object.keys(user));
+
+// Task 29
+    console.log(Object.values(user));
+
+// Task 30
+    console.log(Object.entries(user));
+
+// Task 31
+    let text = JSON.stringify(user);
+    console.log(text);
+
+// Task 32
+    let obj = JSON.parse(text);
+    console.log(obj);
+
+// Task 33
+//JSON للتواصل بين FRONT & BACK 
+    console.log("JSON is used to send and save data in frontEnd and backEnd.");
+
+
+    </script>
+</body>
+</html>

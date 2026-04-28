@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 2vh;
+}
+
+p {
+    color: violet;
+    /* background-color: blue; */
+}
+
+li {
+    color: green;
+}
+
+.done {
+    color: red;
+}
+
+.amir {
+    font-size: 3em;
+    font-weight:900;
+
+    background-color:lightgray;
+    margin: 10px;
+    padding: 10px;
+    border: 5px dashed black;
+}
+
+#heroDescription {
+    color: lightblue;
+    line-height: 1.2;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.classOne {
+    color: blue;
+}
+
+#idOne {
+    color: red;
+}
+
+ /* over fide to the style  */
+p {
+    color: #346739;
+    /* background-color: green; */
+}
+
+
+.hero {
+    background-color: rgb(50, 200, 100);
+    width: 100%;
+    height: 200px;
+}
+
+.hero .classOne {
+    background-color: lightgreen;
+    width: 25%
+}
+
+.hero #idOne {
+    background-color: tomato;
+    color: white;
+    width: 160px
+}
+
+.last {
+    background-color: aquamarine;
+    width: 10em
+}
+
+
+.card {
+    background-color: lightgreen;
+
+    width: 300px;
+    height: 300px;
+
+    /* border: red solid 10px; */
+
+    margin: 200px 50px 20px 0;
+    /* border-bottom: blue 10px; */
+
+    /* margin-top: 10px; */
+
+}
+/*
+
+css syntacx
+==============
+
+select by tag name
+select by class
+select by id
+combination
+
+
+
+*/

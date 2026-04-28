@@ -1,0 +1,95 @@
+/* .task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px;
+    align-items: flex-start;
+
+} */
+
+.Urgent {
+    background-color: rgb(249, 249, 255);
+    border-radius: 10px;
+    border-left: 5px solid brown;
+    padding: 10px;
+
+
+}
+
+.In-progress {
+    background-color: rgb(249, 249, 255);
+    border-radius: 10px;
+    border-left: 5px solid rgb(240, 159, 183);
+    padding: 10px;
+
+
+}
+
+.Done {
+    background-color: rgb(249, 249, 255);
+    border-radius: 10px;
+    border-left: 5px solid yellow;
+    padding: 10px;
+
+
+}
+
+.circle-container {
+    display: flex;
+    padding: 5px;
+
+}
+
+.circle {
+
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: left -15px;
+    ;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
+
+
+.Urgent h4 {
+    background-color: rosybrown;
+    color: brown;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 12px;
+
+}
+
+.In-progress h4 {
+    background-color: rgb(212, 7, 120);
+    color: rgb(250, 203, 222);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 12px;
+}
+
+.Done h4 {
+    background-color: rgb(180, 163, 5);
+    color: rgb(252, 249, 100);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 12px;
+
+}

@@ -1,0 +1,16 @@
+DOM >> document object module
+selection >> querySelector 
+query >> html tag 
+qeruy >>> using class .classname
+qeruy >>> using class #idName
+
+* select first elemnt meets the query
+
+
+querySelectorAll >> return all the elment smeeting the query >> nodeLIst
+
+getElementById >> return elment with teh id eqal to it
+
+-==========
+textContent >> smart >> return all the text in the caller elment 
+innerHtml >> allow addign acrtual html tags with content 

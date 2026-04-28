@@ -1,0 +1,32 @@
+display:
+block, inline, inline-block, none, flex, grid
+
+
+block:
+will make the elment take its parents full width
+
+inline:
+will make the elment takes as much space as neaded only
+
+inline-block:
+best of the two worlds
+elment is inline but we can set a width and height to it normally
+elments can have margins top and bottom
+
+none:
+totally removes the elment from the dom "html document in the brouser"
+
+flex:
+most common way to organize component in the page.
+convert the elment in to flex container.
+
+grid:
+used for layout systems.
+
+
+===================
+
+position:
+static, absolute, relative, fixed, sticky
+
+

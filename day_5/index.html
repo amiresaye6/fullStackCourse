@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>tailwind css</title>
+</head>
+
+<body>
+    <div class="bg-violet-700 m-[55px] pr-5 flex w-[400px] h-screen justify-end">
+        Amir
+    </div>
+
+    <!-- 
+  none >> all directions 
+  t >> top
+  b >> bottom
+  r >> right
+  l >> left
+ -->
+
+
+    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div class="bg-red-500 ">Mohamed</div>
+        <div class="bg-green-500">Item 2</div>
+        <div class="bg-blue-500">Item 3</div>
+        <div class="bg-blue-500">Item 3</div>
+        <div class="bg-[#00ff00] dark:bg-red-400">Item 3</div>
+    </div>
+
+    <div class="w-full h-lvh bg-amber-500 dark:bg-blue-400 center">
+        any thext
+    </div>
+
+
+
+    <!-- 
+  none >> all directions 
+  t >> top
+  b >> bottom
+  r >> right
+  l >> left
+ -->
+
+    <!--
+sm >> small size
+md >> medium size 
+lg >> larg screens
+xl >> extra large 
+ -->
+
+
+    <!-- 
+  dark mode >> add dark: prefex
+ -->
+
+
+    <!-- 
+  two methodoligites in stylign css
+  mobile first approach
+  web first aproach
+-->
+
+
+
+    <div class="m-52 w-[300px] bg-violet-300 rounded-2xl shadow-2xl border-2 border-violet-900">
+        <div class="overflow-hidden rounded-2xl w-[300px]">
+            <img class="w-[300px] object-fill overflow-hidden transition hover:scale-125 rounded-2xl"
+                src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-2165950545-69600af8c9b0d.jpg?crop=0.670xw:1.00xh;0.134xw,0&resize=1120:*"
+                alt="image of a flower">
+        </div>
+
+        <div class="pl-2 p-2">
+            <h1 class="text-2xl text-violet-600 font-bold">Some bueautrifl flowrs any thign</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat</p>
+
+            <!-- <input type="text" class=" bg-red foucs:bg-green-600"> -->
+        </div>
+        <button class="bg-violet-600 text-white px-5 py-3 rounded-2xl transition hover:bg-violet-400 m-2 border-2 border-violet-900 active:bg-blue-600 " >Add to cart</button>
+    </div>
+
+
+</body>
+
+</html>

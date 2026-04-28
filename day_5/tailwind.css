@@ -1,0 +1,44 @@
+/* .background_color_red {
+    background-color: red;
+}
+.background_color_green {
+    background-color: green;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding_10 {
+    padding: 10px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.mainFont {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    color: gray;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+} */
+
+/* 
+@custom-variant dark (&:where(.light, .light *)); */
+
+/* @layer  components {
+    .center {
+        @apply flex item-center justify-center
+    }
+} */

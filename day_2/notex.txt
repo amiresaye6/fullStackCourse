@@ -1,0 +1,35 @@
+most common attributes
+id
+class
+src
+href
+alt
+title
+
+inline elments vs block elments\
+examples
+inline
+<span>
+<a>
+<strong>
+<i>
+<b>
+<em>
+
+block elments
+<h1>
+<div>
+<p>
+<section>
+<header>
+
+semantic, nosemantic elments
+semantic elments >> elmnents for organization,
+accessability, readability
+
+header
+nav
+main
+article
+section
+footer

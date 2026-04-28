@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 300vh;
+}
+
+.contaienr {
+    position: sticky;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spac {
+    height: 200vh;
+    padding: 20px;
+    background: white;
+}
+
+.btnSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(37, 38, 38, 0.8);
+    width: 280px;
+    /* height: 30px; */
+    color: white;
+    border-radius: 30px;
+    padding: 10px 10px 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnSection .plusIcon {
+    background: rgb(41, 151, 255);
+    border-radius: 30px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.card {
+    border-radius: 30px;
+    position: relative;
+    width: 344px;
+    height: 684px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card .cardText {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    margin: 30px 0 0 30px;
+    font-size: 14px;
+}
+
+.addToCart {
+    background: white;
+    border-radius: 30px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border: none;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.cardsSectiono {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+.imgContainer {
+    width: 600px;
+    height: 600px;
+    background: red;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    /* object-fit:    ; */
+}

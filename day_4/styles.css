@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pageHeader {
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    position: sticky;
+    top: 20px;
+}
+
+.pageHeader a {
+    text-decoration: none;
+    color: brown;
+    background-color: burlywood;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+/* 
+    vh >> viwe height
+    vw >> view widh
+
+*/
+body {
+    height: 300vh;
+}
+nav {
+    margin-top: 60px;
+
+}
+nav h3 {
+    background-color: aqua;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.goUP {
+    background-color: burlywood;
+    color: brown;
+    padding: 15px;
+    display: inline-block;
+
+    border-radius: 40px;
+
+    position: fixed;
+
+    /* 
+    position >> allow me ot add , top, bottom, right, left, Z-index
+    */
+
+    right: 20px;
+    bottom: 20px;
+}
+
+
+.parent {
+    width: 500px;
+    height: 500px;
+
+    background-color: aquamarine;
+    position: relative;
+    /* bottom: 0; */
+    /* right: 400px; */
+}
+
+.child {
+    width: 80px;
+    height: 80px;
+    background-color: cadetblue;
+    border: 2px solid gray;
+}
+
+.move {
+    position: absolute;
+    background-color: red;
+    right: 0;
+    /* top: 100% */
+    bottom: 0;
+}
+
+
+
+/* card style  */
+
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid gray;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-family: Arial, Helvetica;
+    color: brown;
+
+    padding: 10px;
+}
+
+.card p {
+        font-size: 18px;
+    font-family: Arial, Helvetica;
+    color: burlywood;
+
+    padding: 10px;
+}
+
+.card button  {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    border: none;
+    background-color: antiquewhite;
+    color: brown;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+

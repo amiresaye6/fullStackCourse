@@ -1,0 +1,212 @@
+[
+    {
+        "week": 1,
+        "sessions": [
+            {
+                "id": 1,
+                "title": "The Big Picture & Setup",
+                "topics": [
+                    "Programming & Web Dev Intro",
+                    "Frontend vs. Backend",
+                    "Client-Server Model",
+                    "VS Code & Folder Structure"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "HTML Structure & Content",
+                "topics": [
+                    "HTML5 Document Structure",
+                    "Semantic HTML",
+                    "Lists, Links & Images",
+                    "Accessibility Basics"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "User Input & CSS Basics",
+                "topics": [
+                    "Forms & Input Types",
+                    "Buttons & Labels",
+                    "CSS Selectors & Units",
+                    "Browser Console Debugging"
+                ]
+            }
+        ]
+    },
+    {
+        "week": 2,
+        "sessions": [
+            {
+                "id": 4,
+                "title": "The CSS Box Model & Typography",
+                "topics": [
+                    "Box Model Mechanics",
+                    "Typography Basics",
+                    "Display Property",
+                    "Positioning & Layout Flow"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Responsive Modern Layouts",
+                "topics": [
+                    "Flexbox & CSS Grid",
+                    "Media Queries",
+                    "Responsive Design Strategy",
+                    "Transitions & Hover Effects"
+                ]
+            },
+            {
+                "id": 6,
+                "title": "Utility-First Styling with Tailwind",
+                "topics": [
+                    "Tailwind Setup",
+                    "Utility-First Workflow",
+                    "Spacing & Typography Utilities",
+                    "Dark Mode & Focus States"
+                ]
+            }
+        ]
+    },
+    {
+        "week": 3,
+        "sessions": [
+            {
+                "id": 7,
+                "title": "Programming Fundamentals",
+                "topics": [
+                    "Variables & Data Types",
+                    "Conditions & Loops",
+                    "Functions & Scope",
+                    "Hoisting Concepts"
+                ]
+            },
+            {
+                "id": 8,
+                "title": "Data Structures & Modern Syntax",
+                "topics": [
+                    "Array Methods",
+                    "Object Methods",
+                    "JSON Basics",
+                    "ES6+ Standards"
+                ]
+            },
+            {
+                "id": 9,
+                "title": "The Browser DOM",
+                "topics": [
+                    "Selecting & Modifying Elements",
+                    "Event Listeners",
+                    "Event Bubbling",
+                    "Timers & Form Handling"
+                ]
+            }
+        ]
+    },
+    {
+        "week": 4,
+        "sessions": [
+            {
+                "id": 10,
+                "title": "Asynchronous Programming",
+                "topics": [
+                    "Callbacks & Promises",
+                    "Async/Await",
+                    "Fetch API",
+                    "Destructuring & Spread Operator"
+                ]
+            },
+            {
+                "id": 11,
+                "title": "Persistent Storage & Git",
+                "topics": [
+                    "LocalStorage",
+                    "Error Handling",
+                    "Git Workflow",
+                    "GitHub Branches & Merging"
+                ]
+            },
+            {
+                "id": 12,
+                "title": "Intro to React",
+                "topics": [
+                    "SPA Concept",
+                    "Virtual DOM vs Real DOM",
+                    "JSX Syntax Rules",
+                    "Component Reusability"
+                ]
+            }
+        ]
+    },
+    {
+        "week": 5,
+        "sessions": [
+            {
+                "id": 13,
+                "title": "React Core (Props & State)",
+                "topics": [
+                    "Props Communication",
+                    "useState Hook",
+                    "Event Handling",
+                    "State-Driven UI Updates"
+                ]
+            },
+            {
+                "id": 14,
+                "title": "React Rendering & Effects",
+                "topics": [
+                    "Conditional Rendering",
+                    "Lists & Keys",
+                    "useEffect Basics",
+                    "Side Effect Management"
+                ]
+            },
+            {
+                "id": 15,
+                "title": "Backend Fundamentals with Node",
+                "topics": [
+                    "Node.js Runtime",
+                    "NPM & package.json",
+                    "Express Server Setup",
+                    "GET & POST Routing"
+                ]
+            }
+        ]
+    },
+    {
+        "week": 6,
+        "sessions": [
+            {
+                "id": 16,
+                "title": "APIs & Middleware",
+                "topics": [
+                    "HTTP Basics",
+                    "REST API Structure",
+                    "Express Middleware",
+                    "Request/Response Cycle"
+                ]
+            },
+            {
+                "id": 17,
+                "title": "MongoDB & Data Basics",
+                "topics": [
+                    "NoSQL Document Structure",
+                    "MongoDB Atlas Setup",
+                    "CRUD Operations",
+                    "Mongoose Intro"
+                ]
+            },
+            {
+                "id": 18,
+                "title": "Auth, Integration & Deployment",
+                "topics": [
+                    "JWT Concepts",
+                    "CORS & React Integration",
+                    "Deployment (Vercel/Railway)",
+                    "Production Concepts"
+                ]
+            }
+        ]
+    }
+]

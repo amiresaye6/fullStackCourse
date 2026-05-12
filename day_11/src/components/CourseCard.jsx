@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const CourseCard = (props) => {
 
@@ -21,6 +21,11 @@ const CourseCard = (props) => {
             setClicked(true)
         }
     }
+
+    useEffect(() => {
+        console.log("this message will be printed each time the components rerender.", name);
+        // setAvailable(available  + 1);
+    }, [name, available]) // what value should react watch in order to do the action 
 
     return (
         <div className="w-full max-w-sm bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 overflow-hidden transition-all duration-200">

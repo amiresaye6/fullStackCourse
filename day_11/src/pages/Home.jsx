@@ -8,7 +8,7 @@ function Home() {
         <div className="bg-zinc-950 min-h-screen ">
             <Header />
             {/* <Hero /> */}
-            <CourseList />
+            {/* <CourseList /> */}
             <Footer />
         </div>
     )

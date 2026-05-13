@@ -2,15 +2,18 @@ import { useState } from "react";
 
 const CourseCard = (props) => {
 
-    let { name, price, rating, availableSeats, image } = props;
+    let { name, price, rating, availableSeats, image, bestSelling } = props;
     // console.log(props);
 
     // let myseets = availableSeats;
     const [available, setAvailable] = useState(availableSeats);
     const [clicked, setClicked] = useState(false);
 
+    // console.log("Card component renderd", name);
+    
+
     const decreaseSeats = () => {
-        console.log("clicked");
+        console.log("clicked", name);
         if (clicked === false) {
             setAvailable(available - 1);
 
@@ -49,6 +52,27 @@ const CourseCard = (props) => {
                     </svg>
                     <span className="text-sm text-gray-500">{rating}</span>
                 </div>
+
+
+{/*  conditional renderign  */}
+
+                {/* {
+                    bestSelling === true ? (
+                        <div className="text-white bg-indigo-300 px-4 py-2 rounded-lg">
+                            <h3>Best Selling</h3>
+                        </div>
+                    ) : (
+                        <></>
+                    )
+                } */}
+
+                {
+                    bestSelling &&
+                    <div className="text-indigo-500">
+                        <h3>Best Selling</h3>
+                    </div>
+                }
+
 
                 {/* Price & Available Seats */}
                 <div className="flex justify-between items-center mb-5">

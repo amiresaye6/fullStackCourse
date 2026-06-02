@@ -1,0 +1,56 @@
+Requist >> frontend >> backedn 
+backend >> another backend
+
+RESTful api
+Requist types:
+GET >> retreve data  >> get user detaisl, get related products, get discount, get my messages
+POST >> create records >> add new produc, login, create new user, react to a post, send message.
+PATCHE >> chante one or mulble records in the record >> update stock in a product.
+PUT >> used for updates >> update user detaisl, update product price , update messages.
+DELETE >> used to remove records, delete use, delete product, delete messge, etc...
+
+paths:
+domainname.com >> refers to the server ip address
+    resources:
+    domainname.com/resourceone/resourcetwo
+
+    parameters:
+    dynamic param, query params
+    shop.com/categories/:categoryName << dynamic link
+    shop.com/categories/:categoryName?brand=addidas << dynamic link with query parameters
+
+status codes.
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)
+Client error responses (400 – 499)
+Server error responses (500 – 599)
+
+>> old way
+/getAllProducts
+/getAllProductInTech
+/deteproductbyid
+/getPRoductBYID
+/createNewProdct
+/udpateprodcytbyuid
+/deleteproductbyid
+
+>> RestFull way
+>> crud operations
+
+Create
+Read 
+Update
+Delete
+
+GET /products << read
+GET /products/:productId << read
+POST /products << create
+PUT /products/:productId << update
+DELETE /products/:productId << delete 
+
+GET /posts << read
+GET /posts/:productId << read
+POST /posts << create
+PUT /posts/:productId << update
+DELETE /posts/:productId << delete 

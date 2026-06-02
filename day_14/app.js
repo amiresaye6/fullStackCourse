@@ -15,13 +15,17 @@
 
 // new way using express.js
 
+
 const products = [];
 
 const express = require("express");
+const logRequists = require("./customLogger");
+const { saveBlogToDB, getBlogsFromDb, deleteBlogFromDB } = require("./blogsService");
 
 const app = express();
 
 app.use(express.json())
+app.use(logRequists)
 
 app.get("/", (req, res) => {
     console.log("request form frontedn to teh /");
@@ -65,6 +69,96 @@ app.post("/products", (req, res) => {
 
 })
 
+// create a new blogs
+app.post('/blogs', (req, res) => {
+
+    saveBlogToDB(req.body);
+    return res.status(201).json({
+        message: "blog created successfully",
+        blog: req.body
+    })
+
+})
+
+app.get('/blogs', (req, res) => {
+    return res.status(200).json(getBlogsFromDb())
+})
+
+app.get('/blogs/:blogId', (req, res) => {
+    const blogId = req.params.blogId
+    const allBlogs = getBlogsFromDb();
+    console.log(allBlogs);
+
+    const result = allBlogs.filter(blog => blog.id === +blogId);
+
+    console.log(result);
+
+    if (result.length > 0) {
+        return res.status(200).json(
+            {
+                message: "found blog successfully",
+                blog: result[0]
+            }
+        )
+    }
+    return res.status(404).json({
+        message: "can nod find a blog with this id"
+    })
+
+})
+
+app.put('/blogs/:blogId', (req, res) => {
+    const blogId = req.params.blogId
+    const allBlogs = getBlogsFromDb();
+
+    const result = allBlogs.filter(blog => blog.id === +blogId);
+
+    console.log(result);
+
+    if (result.length > 0) {
+        deleteBlogFromDB(blogId);
+        saveBlogToDB({
+            ...req.body,
+            id: blogId
+        })
+
+        res.status(200).json({
+            message: "blog udpated successfully",
+            blog: {
+                ...req.body,
+                id: blogId
+            }
+        })
+    }
+    return res.status(404).json({
+        message: "can nod find a blog with this id"
+    })
+})
+
+app.delete('/blogs/:blogId', (req, res) => {
+    const blogId = req.params.blogId
+    const allBlogs = getBlogsFromDb();
+
+    const result = allBlogs.filter(blog => blog.id !== +blogId);
+
+    console.log(result);
+
+    if (result.length > 0) {
+        deleteBlogFromDB(blogId);
+        res.status(200).json({
+            message: "blog was deleted successfully",
+            blog: {
+                ...result
+            }
+        })
+    }
+    return res.status(404).json({
+        message: "can nod find a blog with this id"
+    })
+})
+
+
+
 
 app.post("/login", (req, res) => {
     const userName = "amiralsayed"
@@ -72,7 +166,7 @@ app.post("/login", (req, res) => {
 
     const user = req.body;
 
-    if(!user || !user.userName || !user.password) {
+    if (!user || !user.userName || !user.password) {
         return res.status(403).json(
             {
                 message: "userName and password are required"
@@ -80,8 +174,7 @@ app.post("/login", (req, res) => {
         )
     }
 
-    if(user.userName !== userName || user.password !== password ) 
-    {
+    if (user.userName !== userName || user.password !== password) {
         return res.status(401).json({
             message: "username or passwrod are incorrect"
         })
@@ -92,7 +185,7 @@ app.post("/login", (req, res) => {
         token: "2341234324124828134092134234723048231049098098098402342374234-2312",
         user: {
             name: "Amir alsayed",
-            id: 1, 
+            id: 1,
             age: 24,
             dept: "OS"
         }

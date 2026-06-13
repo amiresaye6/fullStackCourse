@@ -1,0 +1,9 @@
+user >> logn (email , password)
+
+backend checks >> email exits 
+if yes >> check password >> correct
+user can be logged in
+generate token for this user, send it back at the response.
+>> we have token>> we can send it bakc with each future requist.
+
+user cna not loginn, return login failed.
